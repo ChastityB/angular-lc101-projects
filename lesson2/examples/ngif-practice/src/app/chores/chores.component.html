@@ -2,6 +2,7 @@
     <h3>Chores</h3>
     <ul>
         <li *ngFor = 'let chore of chores'>{{chore}}</li>
+        <p *ngIf = 'chores.length > finishedChores.array' color="blue">Work harder!</p> 
     </ul>
 </div>
 <hr>
